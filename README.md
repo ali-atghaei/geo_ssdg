@@ -30,3 +30,10 @@ bash run_ssdg.sh ssdg_pacs 210
 <pre><code>
 python parse_test_res.py output/ssdg_officehome/nlab_1950/FBCSA/resnet18 --multi-exp
 </code></pre>
+<h1>Acknowledgement</h1>
+The core of our code is sourced from the repositories listed below.
+
+<a href='https://openreview.net/pdf?id=1JssKBooMlp'>Stylematch</a> "Semi-Supervised Domain Generalization
+with Stochastic StyleMatch", International Journal of Computer Vision 2023  paper.
+<a href ='https://github.com/Chumsy0725/FBC-SA' > Fbc-SA</a> "Towards Generalizing to Unseen Domains with Few Labels", CVPR 2024 paper.
+We express our gratitude to the authors for making their codes publicly available. We also encourage acknowledging their contributions by citing their publications.
