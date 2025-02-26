@@ -7,5 +7,13 @@ Here we give an example. Say you want to run FBC-SA on OfficHome under the 10-la
 ```
 conda activate dassl
 cd scripts/FBCSA
-bash run_ssdg.sh ssdg_officehome 1950 
+bash run_ssdg.sh ssdg_pacs 210
 ```
+In this case, the code will run FBC-SA in four different setups (four target domains), each for five times (five random seeds). You can modify the code to run a single experiment instead of all at once if you have multiple GPUs.
+
+To show the results, simply do
+```
+python parse_test_res.py output/ssdg_officehome/nlab_1950/FBCSA/resnet18 --multi-exp
+
+```
+
