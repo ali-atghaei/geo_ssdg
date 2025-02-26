@@ -1,19 +1,32 @@
-# geo_ssdg
-This code is built on top of Dassl.pytorch and ssdg-benchmark. Please follow the instructions provided in <a href=https://github.com/KaiyangZhou/Dassl.pytorch>Dassl</a> and <a href=https://github.com/KaiyangZhou/ssdg-benchmark>ssdg-benchmark</a> to install the dassl environment, as well as to prepare the datasets.
-<h1> How to run </h1>
-The script is provided in /scripts/FBASA/run_ssdg.sh. You need to update the DATA variable that points to the directory where you put the datasets. There are two input arguments: DATASET and NLAB (total number of labels).
+# Geo SSDG
+<p>This project is built upon <strong>Dassl.pytorch</strong> and <strong>ssdg-benchmark</strong>. To set up the environment and prepare the datasets, please follow the instructions provided in the repositories:</p>
 
-Here we give an example. Say you want to run FBC-SA on OfficHome under the 10-labels-per-class setting (i.e. 1950 labels in total), simply run the following commands in your terminal,
-```
+<ul>
+    <li><a href="https://github.com/KaiyangZhou/Dassl.pytorch">Dassl.pytorch</a></li>
+    <li><a href="https://github.com/KaiyangZhou/ssdg-benchmark">ssdg-benchmark</a></li>
+</ul>
+
+<h1>How to Run</h1>
+
+<p>You can find the script in <code>/scripts/FBASA/run_ssdg.sh</code>. Ensure that you update the <code>DATA</code> variable to point to the directory where your datasets are stored. The script accepts two input arguments:</p>
+
+<ul>
+    <li><code>DATASET</code> – The name of the dataset.</li>
+    <li><code>NLAB</code> – The total number of labels.</li>
+</ul>
+
+<p>For example, if you want to execute <strong>FBC-SA</strong> on <strong>OfficeHome</strong> under the 10-labels-per-class configuration (which results in a total of 1950 labels), run the following commands in your terminal:</p>
+
+<pre><code>
 conda activate dassl
 cd scripts/FBCSA
 bash run_ssdg.sh ssdg_pacs 210
-```
-In this case, the code will run FBC-SA in four different setups (four target domains), each for five times (five random seeds). You can modify the code to run a single experiment instead of all at once if you have multiple GPUs.
+</code></pre>
 
-To show the results, simply do
-```
+<p>In this setup, the code will execute <strong>FBC-SA</strong> across four different target domains, each running five times using different random seeds. If you have multiple GPUs and prefer running a single experiment instead of all at once, you can modify the script accordingly.</p>
+
+<p>To display the results, run:</p>
+
+<pre><code>
 python parse_test_res.py output/ssdg_officehome/nlab_1950/FBCSA/resnet18 --multi-exp
-
-```
-
+</code></pre>
