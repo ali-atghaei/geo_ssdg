@@ -19,7 +19,7 @@
 
 <pre><code>
 conda activate dassl
-cd scripts/FBCSA
+cd scripts/stylematch
 bash run_ssdg.sh ssdg_pacs 210
 </code></pre>
 
