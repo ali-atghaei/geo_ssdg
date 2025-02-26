@@ -23,7 +23,7 @@ cd scripts/FBCSA
 bash run_ssdg.sh ssdg_pacs 210
 </code></pre>
 
-<p>In this setup, the code will execute <strong>FBC-SA</strong> across four different target domains, each running five times using different random seeds. If you have multiple GPUs and prefer running a single experiment instead of all at once, you can modify the script accordingly.</p>
+<p>In this setup, the code will execute <strong>gfbc_geo</strong> across four different target domains, each running five times using different random seeds. If you have multiple GPUs and prefer running a single experiment instead of all at once, you can modify the script accordingly.</p>
 
 <p>To display the results, run:</p>
 
