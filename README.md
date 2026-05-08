@@ -104,10 +104,11 @@ These resources are provided to facilitate transparent and reproducible evaluati
 If you find this repository useful in your research, please cite the corresponding manuscript:
 
 ```bibtex
-@article{yourpaper2026,
+@article{atghaei2026geometry,
   title={Geometry-Aware Representation Learning for Semi-Supervised Domain Generalization},
-  author={Your Name and Coauthors},
+  author={Ali Atghaei and Coauthors},
   journal={The Visual Computer},
+  note={Under review},
   year={2026}
 }
 ```
