@@ -42,7 +42,7 @@ Prepare the datasets according to the official SSDG benchmark structure describe
 Ensure that the dataset path is correctly assigned to the `DATA` variable inside:
 
 ```bash
-/scripts/FBASA/run_ssdg.sh
+/scripts/StyleMatch/run_ssdg.sh
 ```
 
 ---
@@ -52,7 +52,7 @@ Ensure that the dataset path is correctly assigned to the `DATA` variable inside
 The main training script is:
 
 ```bash
-/scripts/FBASA/run_ssdg.sh
+/scripts/StyleMatch/run_ssdg.sh
 ```
 
 The script accepts two arguments:
