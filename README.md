@@ -106,7 +106,7 @@ If you find this repository useful in your research, please cite the correspondi
 ```bibtex
 @article{atghaei2026geometry,
   title={Geometry-Aware Representation Learning for Semi-Supervised Domain Generalization},
-  author={Ali Atghaei and Coauthors},
+  author={Ali Atghaei and Mohammad Rahmati},
   journal={The Visual Computer},
   note={Under review},
   year={2026}
